@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        .rating-container {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        label:before {
+            content: '★';
+            margin: 5px;
+            font-size: 2em;
+            display: inline-block;
+        }
+
+        input[type="radio"]:checked + label:before {
+            color: gold;
+        }
+
+        .checkbox-container {
+            margin-top: 20px;
+        }
+
+        .review-box {
+            width: 70%;
+            max-width: 600px;
+            margin-top: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+    </header>
+
+    <div class="rating-container">
+        <input type="radio" name="rating" id="star5"><label for="star5"></label>
+        <input type="radio" name="rating" id="star4"><label for="star4"></label>
+        <input type="radio" name="rating" id="star3"><label for="star3"></label>
+        <input type="radio" name="rating" id="star2"><label for="star2"></label>
+        <input type="radio" name="rating" id="star1"><label for="star1"></label>
+    </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="checkbox1"> <label for="checkbox1">1 Star</label><br>
+        <input type="checkbox" id="checkbox1"> <label for="checkbox1">2 Star</label><br>
+        <input type="checkbox" id="checkbox2"> <label for="checkbox2">3 Stars </label><br>
+        <input type="checkbox" id="checkbox3"> <label for="checkbox3">4 Stars</label><br>
+        <input type="checkbox" id="checkbox1"> <label for="checkbox1">5 Star</label><br>
+    </div>
+
+    <div class="review-box">
+        <label for="review">Write a Review:</label><br>
+        <textarea id="review" rows="4" cols="50" placeholder="Enter your review here"></textarea>
+    </div>
+
+    <button>Submit Feedback</button>
+</body>
+</html>
