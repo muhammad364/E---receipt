@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Organization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        .large-box {
+            width: 70%;
+            max-width: 600px;
+            height: 100px;
+            background-color: #007BFF;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .small-box {
+            width: 70%;
+            max-width: 600px;
+            height: 50px;
+            background-color: #692588;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .three-boxes {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .small-box-inner {
+            flex: 1;
+            background-color: #692588;
+            height: 50px;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receipt Organization</h1>
+    </header>
+
+    <div class="large-box">
+        Receipt History and Receipt Catagories
+    </div>
+
+    <div class="small-box">
+        Search via name or date
+    </div>
+
+    <div class="three-boxes">
+        <div class="small-box-inner">Number</div>
+        <div class="small-box-inner">E-mail</div>
+        <div class="small-box-inner">Saved</div>
+    </div>
+</body>
+</html>
